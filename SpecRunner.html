@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mocha</title>
+    <link rel="stylesheet" href="./lib/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <!-- Dependency -->
+    <script src="./lib/mocha.js"></script>
+    <script src="./lib/chai.js"></script>
+
+    <!-- Mocha Setup -->
+    <script>mocha.setup('bdd')</script>
+    <script>expect = chai.expect</script>
+
+    <!-- Source File -->
+    <script src="./src/characterFrequency.js"></script>
+
+    <!-- Spec File -->
+    <script src="./spec/characterFrequencySpec.js"></script>
+
+    <!-- Mocha Run -->
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
